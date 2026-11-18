@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, X, Shield, Award } from 'lucide-react';
+import { Check, X, Award } from 'lucide-react';
 import { SectionHeading } from '../common/SectionHeading';
 
 export const MarketComparison: React.FC = () => {
@@ -93,25 +93,6 @@ export const MarketComparison: React.FC = () => {
                 ))}
               </tbody>
             </table>
-          </div>
-
-          {/* Bottom Trust Highlight */}
-          <div className="bg-deep-brown text-cream p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-            <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-gold flex-shrink-0" />
-              <div>
-                <div className="font-serif text-base sm:text-lg font-bold text-cream">
-                  100% Satvik Quality Guarantee
-                </div>
-                <div className="text-xs text-cream/80">
-                  Crafted exclusively with grade-A dried dates, California nuts, and pure desi cow ghee.
-                </div>
-              </div>
-            </div>
-
-            <span className="text-xs font-jost uppercase tracking-[0.2em] text-gold font-bold bg-white/10 px-3.5 py-1.5 rounded-full border border-gold/40">
-              Zero Compromise
-            </span>
           </div>
 
         </div>

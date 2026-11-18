@@ -6,6 +6,7 @@ import { siteConfig } from '../../data/siteConfig';
 import { dryFruitsChikkiProduct } from '../../data/products';
 import { MobileMenu } from './MobileMenu';
 import { getWhatsAppUrl } from '../../lib/whatsapp';
+import { PromoHeaderBars } from '../common/PromoHeaderBars';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,32 +35,37 @@ export const Header: React.FC = () => {
 
   return (
     <>
-      <header
-        className={`sticky top-0 z-40 w-full transition-all duration-300 ${
-          isScrolled
-            ? 'bg-cream/95 backdrop-blur-md py-1.5 sm:py-2 border-b border-light-beige'
-            : 'bg-cream py-2 sm:py-2.5 lg:py-3 border-b border-light-beige/60'
-        }`}
-      >
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between min-h-[64px] sm:min-h-[72px] lg:min-h-[78px] xl:min-h-[84px]">
-          
-          {/* Left: Brand Logo */}
-          <div className="flex items-center">
-            <Link
-              to="/"
-              className="flex items-center select-none py-0.5"
-              aria-label={`${siteConfig.brandName} Traditional Sweets Home`}
-            >
-              <img
-                src="/images/logo.png"
-                alt={`${siteConfig.brandName} Traditional Sweets`}
-                width="1024"
-                height="648"
-                className="w-32 sm:w-36 md:w-44 lg:w-48 xl:w-56 2xl:w-60 h-auto max-h-14 sm:max-h-16 lg:max-h-20 xl:max-h-22 object-contain"
-                loading="eager"
-              />
-            </Link>
-          </div>
+      <header className="sticky top-0 z-40 w-full shadow-sm">
+        {/* Promotional & App Discount Top Bars (Lines 1 & 2) */}
+        <PromoHeaderBars />
+
+        {/* Main White/Cream Navbar (~70px height) */}
+        <div
+          className={`w-full transition-all duration-300 ${
+            isScrolled
+              ? 'bg-cream/95 backdrop-blur-md py-1 sm:py-1.5 border-b border-light-beige'
+              : 'bg-cream py-1.5 sm:py-2 border-b border-light-beige/60'
+          }`}
+        >
+          <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between min-h-[64px] sm:min-h-[70px] lg:min-h-[72px]">
+            
+            {/* Left: Brand Logo (~50px max-height) */}
+            <div className="flex items-center">
+              <Link
+                to="/"
+                className="flex items-center select-none py-0.5"
+                aria-label={`${siteConfig.brandName} Traditional Sweets Home`}
+              >
+                <img
+                  src="/images/logo.png"
+                  alt={`${siteConfig.brandName} Traditional Sweets`}
+                  width="1024"
+                  height="648"
+                  className="w-32 sm:w-36 md:w-40 lg:w-44 h-auto max-h-[48px] sm:max-h-[52px] object-contain"
+                  loading="eager"
+                />
+              </Link>
+            </div>
 
           {/* Center: Desktop Navigation Links (Centered mathematically with reduced gap) */}
           <nav
@@ -118,6 +124,7 @@ export const Header: React.FC = () => {
             </button>
           </div>
 
+        </div>
         </div>
       </header>
 

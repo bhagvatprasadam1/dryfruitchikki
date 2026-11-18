@@ -31,8 +31,7 @@ export const TextureSensory: React.FC = () => {
 
           {/* Right: Dramatic Sensory Copy */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-5">
-            <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-              <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
+            <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] block">
               THE SENSORY DISTINCTION
             </span>
 

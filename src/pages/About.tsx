@@ -54,10 +54,8 @@ export const About: React.FC = () => {
 
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
-          <span className="font-jost text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-primary flex items-center justify-center gap-2 mb-3">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
+          <span className="font-jost text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-primary block mb-3">
             ANCESTRAL CRAFTSMANSHIP & HEALTH
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             Preserving Purity & Wholesome Tradition

@@ -79,7 +79,7 @@ export const ReturnPolicy: React.FC = () => {
           </div>
 
           {/* Detailed Policy Sections */}
-          <div className="space-y-6 text-sm text-dark-text/90 leading-relaxed border-t border-light-beige pt-6">
+          <div className="space-y-6 text-sm text-dark-text/90 leading-relaxed pt-2">
             <section className="space-y-2.5">
               <h2 className="font-serif font-bold text-xl text-deep-brown flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />

@@ -37,10 +37,8 @@ export const Process: React.FC = () => {
 
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
-          <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 flex items-center justify-center gap-2">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
+          <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 block">
             TIME-HONOURED TECHNIQUE
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             The Traditional Dry Fruits Chikki Making Process
@@ -54,8 +52,7 @@ export const Process: React.FC = () => {
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-light-beige mb-8 sm:mb-10 lg:mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
             <div className="lg:col-span-7 space-y-4 sm:space-y-5">
-              <span className="font-jost text-gold-dark font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-                <span className="inline-block w-3 h-0.5 bg-gold/70"></span>
+              <span className="font-jost text-gold-dark font-bold text-xs uppercase tracking-[0.22em] block">
                 THE SECRET OF THE NATURAL BINDER
               </span>
               <h2 className="font-serif text-xl sm:text-2xl lg:text-3xl text-deep-brown font-normal leading-tight">

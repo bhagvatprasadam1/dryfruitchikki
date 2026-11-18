@@ -44,6 +44,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     if (keywords) {
       setMeta('keywords', keywords);
     }
+    setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
     const fullCanonicalUrl = `${siteConfig.siteUrl}${canonicalPath === '/' ? '' : canonicalPath}`;
     const fullOgImageUrl = ogImage.startsWith('http')

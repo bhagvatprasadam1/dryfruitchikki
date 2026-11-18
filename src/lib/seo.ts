@@ -2,6 +2,23 @@ import { siteConfig } from '../data/siteConfig';
 import { dryFruitsChikkiProduct } from '../data/products';
 import { faqsData } from '../data/faqs';
 
+export function getWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteConfig.brandName,
+    alternateName: ['Dry Fruit Punch Dates', 'Bhagvat Prasadam Dry Fruits Chikki'],
+    url: siteConfig.siteUrl,
+    description: siteConfig.tagline,
+    publisher: {
+      '@type': 'Organization',
+      name: siteConfig.brandName,
+      logo: `${siteConfig.siteUrl}/images/logo.png`,
+    },
+    inLanguage: 'en-IN',
+  };
+}
+
 export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',

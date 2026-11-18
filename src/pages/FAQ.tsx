@@ -111,10 +111,8 @@ export const FAQ: React.FC = () => {
 
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 flex items-center justify-center gap-2">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
+          <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 block">
             HELP & KNOWLEDGE BASE
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             Frequently Asked Questions

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { siteConfig } from "../../data/siteConfig";
 import { Phone, Mail, MapPin, ChevronDown } from "lucide-react";
 import { WhatsAppIcon } from "../common/WhatsAppIcon";
+import { PlayStoreIcon, AppStoreIcon } from "../common/StoreIcons";
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -303,8 +304,49 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Footer Mobile App Promotion Bar (Single-line, zero extra whitespace above copyright) */}
+        <div className="pt-2 pb-2.5 flex items-center justify-center">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2.5 flex-nowrap text-xs text-muted-text">
+            {/* Desktop Text */}
+            <span className="hidden md:inline font-jost text-xs text-dark-text/90 font-medium">
+              Install <strong className="text-primary font-bold">{siteConfig.apps.appName}</strong> App &amp; Get{' '}
+              <span className="text-gold-dark font-bold">2% Extra Discount</span> on App! Available on:
+            </span>
+
+            {/* Mobile Text */}
+            <span className="inline md:hidden font-jost text-[10.5px] text-dark-text/90 font-medium whitespace-nowrap">
+              Install App &amp; Get <span className="text-gold-dark font-bold">2% Off</span>:
+            </span>
+
+            {/* App Badges: Centered official black pill badges */}
+            <div className="inline-flex items-center gap-1 sm:gap-1.5 flex-shrink-0">
+              <a
+                href={siteConfig.apps.playStore}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download on Google Play Store"
+                className="inline-flex items-center gap-1 bg-black/90 hover:bg-black text-white text-[9.5px] sm:text-[11px] font-semibold px-2 py-0.5 rounded-full border border-black transition-all shadow-sm active:scale-95"
+              >
+                <PlayStoreIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white flex-shrink-0" />
+                <span>Play Store</span>
+              </a>
+
+              <a
+                href={siteConfig.apps.appStore}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download on Apple App Store"
+                className="inline-flex items-center gap-1 bg-black/90 hover:bg-black text-white text-[9.5px] sm:text-[11px] font-semibold px-2 py-0.5 rounded-full border border-black transition-all shadow-sm active:scale-95"
+              >
+                <AppStoreIcon className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white flex-shrink-0" />
+                <span>App Store</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-4 border-t border-light-beige/70 flex flex-col sm:flex-row items-center justify-center text-center text-xs text-muted-text gap-1.5 sm:gap-2">
+        <div className="pt-2 pb-1 flex flex-col sm:flex-row items-center justify-center text-center text-xs text-muted-text gap-1.5 sm:gap-2">
           <p>
             © {currentYear} {siteConfig.brandName}. All rights reserved. Crafted
             with Gujarati tradition.

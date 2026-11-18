@@ -65,10 +65,9 @@ export const NutritionTable: React.FC = () => {
       <div className="bg-white rounded-3xl border border-light-beige p-6 sm:p-10 lg:p-12">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 sm:pb-8 border-b border-light-beige">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 sm:pb-8">
           <div className="space-y-2">
-            <span className="font-jost text-gold font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-              <span className="inline-block w-3 h-0.5 bg-gold/70"></span>
+            <span className="font-jost text-gold font-bold text-xs uppercase tracking-[0.22em] block">
               CERTIFIED WHOLESOME LAB ANALYSIS
             </span>
             <h3 className="font-serif text-2xl sm:text-3xl text-deep-brown font-normal leading-tight">
@@ -105,7 +104,7 @@ export const NutritionTable: React.FC = () => {
                   {item.amount}
                 </div>
               </div>
-              <p className="text-xs text-muted-text leading-relaxed border-t border-light-beige/70 pt-2.5">
+              <p className="text-xs text-muted-text leading-relaxed pt-2">
                 {item.benefit}
               </p>
             </div>
@@ -113,7 +112,7 @@ export const NutritionTable: React.FC = () => {
         </div>
 
         {/* Footnote Trust Badge */}
-        <div className="mt-8 pt-5 border-t border-light-beige/70 flex flex-wrap items-center justify-between gap-4 text-xs text-muted-text">
+        <div className="mt-8 pt-5 flex flex-wrap items-center justify-between gap-4 text-xs text-muted-text">
           <div className="flex items-center gap-4 flex-wrap font-medium">
             <span className="flex items-center gap-1.5 text-deep-brown">
               <CheckCircle2 className="w-4 h-4 text-muted-green" />

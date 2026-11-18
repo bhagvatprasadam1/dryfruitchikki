@@ -43,10 +43,8 @@ export const Ingredients: React.FC = () => {
 
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
-          <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 flex items-center justify-center gap-2">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
+          <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 block">
             100% NATURAL SOURCING
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             What Is Dry Fruits Chikki Made Of?
@@ -63,8 +61,7 @@ export const Ingredients: React.FC = () => {
         <div className="rounded-3xl overflow-hidden border border-light-beige mb-8 sm:mb-12 bg-white">
           <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
             <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-center space-y-4 sm:space-y-5">
-              <span className="font-jost text-gold font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-                <span className="inline-block w-3 h-0.5 bg-gold/70"></span>
+              <span className="font-jost text-gold font-bold text-xs uppercase tracking-[0.22em] block">
                 NUTRITIONAL ESSENTIALS
               </span>
               <h2 className="font-serif text-xl sm:text-2xl lg:text-3xl text-deep-brown font-normal leading-tight">
@@ -137,7 +134,7 @@ export const Ingredients: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-light-beige text-xs text-muted-green font-medium flex items-start gap-2">
+                <div className="pt-3 text-xs text-muted-green font-medium flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                   <span>
                     <strong className="text-dark-text">Sourcing:</strong> {item.sourcing}

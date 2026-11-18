@@ -6,17 +6,17 @@ export const TrustIndicators: React.FC = () => {
     {
       icon: <Award className="w-6 h-6 text-primary" />,
       title: 'Pure Premium Ghee',
-      description: 'Slow-simmered pure premium ghee imparting the rich, comforting fragrance of tradition.',
+      description: 'Slow-simmered pure cow ghee imparting the rich, comforting fragrance of tradition.',
     },
     {
       icon: <Flame className="w-6 h-6 text-primary" />,
-      title: 'Premium Besan',
-      description: 'Coarse stone-ground gram flour carefully roasted to golden perfection.',
+      title: 'Premium Whole Dates',
+      description: 'Rich Arabian black dates naturally sweetening each slice with zero refined sugar.',
     },
     {
       icon: <HeartHandshake className="w-6 h-6 text-primary" />,
       title: 'Traditional Recipe',
-      description: 'Ancestral Gujarati proportions with authentic hand-rubbed "Dhrabo" technique.',
+      description: 'Ancestral Gujarati proportions with slow ghee-roasting of California nuts.',
     },
     {
       icon: <Clock className="w-6 h-6 text-primary" />,

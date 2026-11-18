@@ -19,8 +19,7 @@ export const HeroSection: React.FC = () => {
             className="lg:col-span-6 space-y-3 sm:space-y-4 text-center lg:text-left flex flex-col justify-center"
           >
             {/* Elegant Text Kicker */}
-            <div className="flex items-center justify-center lg:justify-start gap-2 font-jost text-xs sm:text-sm font-bold tracking-[0.22em] text-gold-dark uppercase">
-              <span className="w-6 h-px bg-gold/60" />
+            <div className="font-jost text-xs sm:text-sm font-bold tracking-[0.22em] text-gold-dark uppercase">
               <span>100% Natural • Dates & Nuts Nutritional Punch</span>
             </div>
 
@@ -91,6 +90,18 @@ export const HeroSection: React.FC = () => {
                 <span>View 250g, 500g & 1kg Packs</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
+            </div>
+
+            {/* Promotional Shipping Highlights Badges */}
+            <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-2.5">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cream-card border border-gold/40 text-[11px] sm:text-xs font-semibold text-deep-brown shadow-none">
+                <span className="text-muted-green font-bold text-xs">✓</span>
+                <span>Free Shipping above ₹999</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cream-card border border-gold/40 text-[11px] sm:text-xs font-semibold text-deep-brown shadow-none">
+                <span className="text-muted-green font-bold text-xs">✓</span>
+                <span>First Order: Free Shipping above ₹599</span>
+              </span>
             </div>
 
             {/* Reassurance & Social Proof */}
